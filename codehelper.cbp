@@ -10,10 +10,11 @@
 				<Option output="codehelper" prefix_auto="1" extension_auto="1" />
 				<Option object_output=".objs/default" />
 				<Option type="3" />
-				<Option compiler="gcc" />
+				<Option compiler="gcc-msys2-mingw64" />
 				<Option host_application="$(#cb)/devel31/codeblocks.exe" />
 				<Option run_host_application_in_terminal="0" />
 				<Compiler>
+					<Add option="-finput-charset=UTF-8 -fexec-charset=UTF-8" />
 					<Add option="-DBUILDING_PLUGIN" />
 					<Add option="-DUNICODE" />
 					<Add option="-D_UNICODE" />
@@ -24,6 +25,9 @@
 					<Add directory="D:/codeblocks-code-r13629-trunk/codeblocks-code-r13629-trunk/src/sdk/wxscintilla/include" />
 					<Add directory="C:/msys64/mingw64/include" />
 				</Compiler>
+				<ResourceCompiler>
+					<Add option="-finput-charset=UTF-8 -fexec-charset=UTF-8" />
+				</ResourceCompiler>
 				<Linker>
 					<Add option='-L&quot;D:\codeblocks-code-r13629-trunk\codeblocks-code-r13629-trunk\src\output31_64&quot;' />
 					<Add option='-L&quot;D:\wxWidgets-3.1.3\wxWidgets-3.1.3\lib\gcc_dll&quot;' />
@@ -183,10 +187,14 @@
 		<Linker>
 			<Add option="-mthreads" />
 		</Linker>
+		<Unit filename="AIDialog.cpp" />
+		<Unit filename="AIDialog.h" />
 		<Unit filename="CodeGenerator.cpp" />
 		<Unit filename="CodeGenerator.h" />
-		<Unit filename="LocalModelCommunicator.cpp" />
-		<Unit filename="LocalModelCommunicator.h" />
+		<Unit filename="CompletionDialog.cpp" />
+		<Unit filename="CompletionDialog.h" />
+		<Unit filename="NetworkRequest.cpp" />
+		<Unit filename="NetworkRequest.h" />
 		<Unit filename="PluginCore.cpp" />
 		<Unit filename="PluginCore.h">
 			<Option target="&lt;{~None~}&gt;" />
