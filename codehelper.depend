@@ -1,36 +1,33 @@
 # depslib dependency file v1.0
-1741627301 source:d:\codeblocks plugin\codehelper\codegenerator.cpp
+1741933422 source:d:\codeblocks plugin\codehelper\codegenerator.cpp
 	"CodeGenerator.h"
-	"LocalModelCommunicator.h"
-	<algorithm>
+	"NetworkRequest.h"
+	"../include/nlohmann/json.hpp"
+	<iostream>
 
-1741627563 d:\codeblocks plugin\codehelper\codegenerator.h
-	"LocalModelCommunicator.h"
+1741922521 d:\codeblocks plugin\codehelper\codegenerator.h
+	<string>
+
+1741880452 d:\codeblocks plugin\codehelper\networkrequest.h
 	<string>
 	<map>
-	<vector>
 
-1741619597 d:\codeblocks plugin\codehelper\networkrequest.h
-	<string>
-	<map>
-
-1741624065 source:d:\codeblocks plugin\codehelper\networkrequest.cpp
+1741882746 source:d:\codeblocks plugin\codehelper\networkrequest.cpp
 	"NetworkRequest.h"
 	<curl/curl.h>
 
-1741624440 source:d:\codeblocks plugin\codehelper\main.cpp
+1741881157 source:d:\codeblocks plugin\codehelper\main.cpp
 	<sdk.h>
 	"PluginCore.h"
 
-1741627301 d:\codeblocks plugin\codehelper\plugincore.h
+1741920599 d:\codeblocks plugin\codehelper\plugincore.h
 	<wx/wx.h>
-	<wx/thread.h>
-	<wx/timer.h>
 	<cbplugin.h>
-	<configmanager.h>
-	<manager.h>
-	<logmanager.h>
 	<sdk_events.h>
+	<memory>
+	<sdk.h>
+	<configurationpanel.h>
+	<wx/menu.h>
 
 1741318088 d:\wxwidgets-3.1.3\wxwidgets-3.1.3\include\wx\wx.h
 	"wx/defs.h"
@@ -575,7 +572,7 @@
 	"wx/string.h"
 	"wx/object.h"
 
-1741318088 d:\wxwidgets-3.1.3\wxwidgets-3.1.3\include\wx\event.h
+1741861385 d:\wxwidgets-3.1.3\wxwidgets-3.1.3\include\wx\event.h
 	"wx/defs.h"
 	"wx/cpp.h"
 	"wx/object.h"
@@ -4499,16 +4496,20 @@
 
 1739437706 c:\msys64\mingw64\include\curl\typecheck-gcc.h
 
-1741627301 source:d:\codeblocks plugin\codehelper\plugincore.cpp
+1741925205 source:d:\codeblocks plugin\codehelper\plugincore.cpp
 	"PluginCore.h"
 	"CodeGenerator.h"
 	"UserInterface.h"
+	"AIDialog.h"
+	"CompletionDialog.h"
 	<manager.h>
 	<editormanager.h>
 	<cbeditor.h>
 	<cbstyledtextctrl.h>
+	<editorbase.h>
+	<wx/wx.h>
 
-1741619597 d:\codeblocks plugin\codehelper\userinterface.h
+1741881157 d:\codeblocks plugin\codehelper\userinterface.h
 	<string>
 	<wx/string.h>
 
@@ -4661,7 +4662,7 @@
 
 1741318094 d:\wxwidgets-3.1.3\wxwidgets-3.1.3\include\wx\qt\dnd.h
 
-1741619597 source:d:\codeblocks plugin\codehelper\userinterface.cpp
+1741882184 source:d:\codeblocks plugin\codehelper\userinterface.cpp
 	"UserInterface.h"
 	<wx/app.h>
 	<wx/config.h>
@@ -5412,12 +5413,56 @@
 1296515634 d:\codeblocks-code-r13629-trunk\codeblocks-code-r13629-trunk\src\include\sdk_precomp.h
 	"sdk_common.h"
 
-1741627635 d:\codeblocks plugin\codehelper\localmodelcommunicator.h
+1741697592 d:\codeblocks plugin\codehelper\localmodelcommunicator.h
 	<string>
 	<windows.h>
 
-1741627678 source:d:\codeblocks plugin\codehelper\localmodelcommunicator.cpp
+1741705625 source:d:\codeblocks plugin\codehelper\localmodelcommunicator.cpp
 	"LocalModelCommunicator.h"
 	<sstream>
 	<memory>
+	<iostream>
+	<windows.h>
+
+1585989166 d:\codeblocks-code-r13629-trunk\codeblocks-code-r13629-trunk\src\include\configurationpanel.h
+	"globals.h"
+	"settings.h"
+	"scrollingdialog.h"
+	<wx/panel.h>
+	<wx/string.h>
+
+1741882184 d:\codeblocks plugin\codehelper\aidialog.h
+	<wx/wx.h>
+	<wx/dialog.h>
+	<wx/textctrl.h>
+	<wx/button.h>
+	<wx/stattext.h>
+	<wx/sizer.h>
+	<string>
+
+1742349182 source:d:\codeblocks plugin\codehelper\aidialog.cpp
+	"AIDialog.h"
+	"NetworkRequest.h"
+	<wx/sizer.h>
+	<wx/stattext.h>
+	<wx/msgdlg.h>
+	"../include/nlohmann/json.hpp"
+
+1741921406 d:\codeblocks plugin\codehelper\completiondialog.h
+	<wx/wx.h>
+	<wx/dialog.h>
+	<wx/textctrl.h>
+	<wx/button.h>
+	<wx/stattext.h>
+	<wx/sizer.h>
+	<string>
+
+1742346862 source:d:\codeblocks plugin\codehelper\completiondialog.cpp
+	"CompletionDialog.h"
+	<wx/sizer.h>
+	<wx/stattext.h>
+	<manager.h>
+	<editormanager.h>
+	<cbeditor.h>
+	<cbstyledtextctrl.h>
 
